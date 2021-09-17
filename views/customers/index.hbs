@@ -1,0 +1,40 @@
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+<h2>Customers</h2>
+
+<table>
+  <tr>
+    <th>customerNumber</th>
+    <th>customerName</th>
+    <th>contactLastName</th>
+    <th>contactFirstName</th>
+    <th>phone</th>
+  </tr> 
+    {{#each customers}}
+     <tr>
+        <td>{{this.customerNumber}}</td>
+        <td>{{this.customerName}}</td>
+        <td>{{this.contactLastName}}</td>
+        <td>{{this.contactFirstName}}</td>
+        <td>{{this.phone}}</td>
+        </tr>
+    {{/each}}
+  
+</table>
