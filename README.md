@@ -10,8 +10,7 @@ Download sample DB from here: https://www.mysqltutorial.org/mysql-sample-databas
 
 Copy `.env.sample.js` to `.env.js` and fill up the db information
 
-3. Start the app in dev mode by by
-4. 
+3. Start the app in dev mode by by 
 ```
 ./start.sh
 ```
