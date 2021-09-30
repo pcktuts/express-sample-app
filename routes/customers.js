@@ -5,8 +5,9 @@ var customerModel = require('../models/customerModel')
 
 /* GET customers listing. */
 router.get('/', async function(req, res, next) {
-    const customers = await customerModel.getCustomers(20)
-    res.render('customers/index', {customers:customers});
+    const customers = await customerModel.getCustomers(5)
+    res.json(customers);
+    //res.render('customers/index', {customers:customers, count:13});
 });
 
 module.exports = router;
